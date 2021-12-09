@@ -130,10 +130,10 @@
     $('.testi-slider.owl-carousel').owlCarousel({
         loop: true,
         margin: 20,
-        nav: false,
-        dots: true,
+        nav: true,
+        dots: false,
         smartSpeed: 2000,
-        autoplay: false,
+        autoplay: true,
         autoplayTimeout: 4000,
         responsive: {
             0: {

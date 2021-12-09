@@ -10,6 +10,9 @@
 :: 10.0 Doctors AREA CSS
 :: 11.0 Footer AREA CSS
 :: 12.0  POPUP AREA 
+:: 13.0 About and Count Area CSS
+:: 14.0 Testimonials Area CSS
+:: 15.0 Services Area CSS
 ****************************** */
 
 /* ******************************
@@ -29,7 +32,6 @@ font-family: 'Poppins', sans-serif; */
 @import url(animate.min.css);
 @import url(aos.css);
 @import url(owl.carousel.min.css);
-@import url(jquery.fancybox.min.css);
 
 /* ******************************
 :: 3.0 GLOBAL CSS
@@ -1336,6 +1338,80 @@ a,
 :: 11.0 Footer AREA CSS
 ****************************** */
 
+.footer-area{
+    background-color: #2f2f2f;
+    padding: 70px 0 0;
+}
+
+.footer-address{
+    display: flex;
+    align-items: center;
+}
+
+.footer-address .adress h5{
+    color: #c1c2d1;
+    font-size: 1.25rem;
+    margin-bottom: 8px;
+}
+
+.footer-address .adress p{
+    color: #c1c2d1ba;
+    font-size: 15px;
+}
+
+.footer-address .adress{
+    flex: 0 0 53%;
+}
+
+.footer-address .footer-number{
+    flex: 0 0 47%;
+    padding-left: 50px;
+}
+
+.footer-number h2{
+    color: #ff850a;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.footer-number .numbers a{
+    color: #ede4d9;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 1.5;
+    transition: all .3s ease;
+}
+
+.footer-number .numbers a:hover{
+    text-decoration: underline;
+}
+
+.row-footer{
+    padding-bottom: 50px;
+}
+
+.footer-mail{
+    padding-left: 50px;
+}
+
+.footer-mail span{
+    color: #ff850a;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.footer-mail .mail a{
+    color: #ede4d9;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1.5;
+    transition: all .3s ease;
+}
+
+.footer-mail .mail a:hover{
+    text-decoration: underline;
+}
+
 .copy-right p{
     color: #caced1;
 }
@@ -1421,7 +1497,12 @@ a,
 }
 
 .last-footer{
-    background-color: #131318;
+    background-color: #2f2f2f;
+    /* padding: 30px 0; */
+}
+
+.copy-right{
+    border-top: 1px solid #c1c2d1;
     padding: 30px 0;
 }
 
@@ -1473,7 +1554,7 @@ a,
 }
 
 .download-close:hover{
-    background: #c5a10f;
+    background: #fe6704;
 }
 
 .download-close span {
@@ -1512,7 +1593,7 @@ a,
     left: 50%;
     transform: translateX(-50%);
     bottom: 0;
-    background: linear-gradient(to right, #ffc343 0%, transparent 100%);
+    background: linear-gradient(to right, #fe6704 0%, transparent 100%);
     z-index: 99;
 }
 
@@ -1610,17 +1691,17 @@ a,
 
 .model-project-details .form-group input::-webkit-input-placeholder,
 .model-project-details .form-group textarea::-webkit-input-placeholder {
-    color: #fff;
+    color: #000;
 }
 
 .model-project-details .form-group input:-ms-input-placeholder,
 .model-project-details .form-group textarea:-ms-input-placeholder {
-    color: #fff;
+    color: #000;
 }
 
 .model-project-details .form-group input::placeholder,
 .model-project-details .form-group textarea::placeholder {
-    color: #fff;
+    color: #000;
 }
 
 .model-project-details input:focus,
@@ -1629,13 +1710,15 @@ a,
     -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
     border: 1px solid #e69746;
-    color: #fff;
-    background: transparent;
+    color: #000;
+    /* background: linear-gradient( 
+        90deg, rgba(254,90,1,1) 0%, rgba(254,90,1,1) 35%, rgba(254,90,1,1) 35%, rgba(254,90,1,0.6502976190476191) 100%); */
 }
 
 .popupleft-content,
 .modal-mookambika{
-    background-color: #e69746;
+    background: linear-gradient( 
+        90deg, rgba(254,90,1,1) 0%, rgba(254,90,1,1) 35%, rgba(254,90,1,1) 35%, rgba(254,90,1,0.6502976190476191) 100%);
 }
 
 .popupleft-content{
@@ -1669,6 +1752,10 @@ a,
 }
 
 #letter5 select, #letter5 input{
+    color: #000;
+}
+
+#letter5 input[type='submit']{
     color: #fff;
 }
 
@@ -1760,3 +1847,225 @@ a,
 }
 
 
+/* ******************************
+:: 13.0 About and Count Area CSS
+****************************** */
+.about-count{
+    padding: 100px 0;
+    position: relative;
+    background-image: url(../img/bg/about-content-bg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.about-content-area .head span{
+    color: #fe5a01;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.about-content-area .head h1{
+    color: #535353;
+    font-size: 35px;
+    font-weight: 700;
+    margin: 10px 0 30px;
+}
+
+.about-content-area .content p{
+    color: #535353;
+    font-size: 16px;
+    line-height: 28px;
+}
+
+.mb-40{
+    margin-bottom: 30px;
+}
+
+.count-area{
+    margin-top: 50px;
+}
+
+.counter-box{
+    flex: 0 0 25%;
+    padding: 30px 28px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    background-color: #0672cc;
+}
+
+.hh-counter .counter-box.counter-last {
+    justify-content: center;
+    background-color: #ff8b0c;
+    align-items: center;
+    flex-direction: inherit;
+}
+
+.hh-counter .counter-box.counter-last a{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.hh-counter .counter-box .head{
+    display: flex;
+    margin-bottom: 5px;
+}
+
+.hh-counter .counter-box h2 {
+    color: #fff;
+    position: relative;
+    font-weight: 600;
+    margin-bottom: 0px;
+    font-size: 60px;
+    line-height: 1;
+}
+
+.hh-counter .counter-box .head span{
+    color: #fff;
+    position: relative;
+    font-weight: 600;
+    margin-bottom: 0px;
+    font-size: 60px;
+    line-height: 1;
+}
+
+.counter-box p{
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/* ******************************
+:: 14.0 Testimonials Area CSS
+****************************** */
+.testi-area{
+    padding: 80px 0;
+    position: relative;
+}
+
+.testi-head span{
+    color: #0672cc;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+
+.testi-head h2{
+    color: #535353;
+    font-weight: 700;
+    margin: 10px 0 50px;
+    font-size: 35px;
+}
+
+.single-testi{
+    display: flex;
+    background-color: #0672cc;
+    padding: 70px 85px;
+    position: relative;
+    max-width: 1050px;
+    margin: 0 auto;
+}
+
+.single-testi .testi-text{
+    flex: 0 0 60%;
+}
+
+.single-testi .testi-img{
+    flex: 0 0 40%;
+}
+
+.single-testi .testi-text .img{
+    margin-bottom: 20px;
+}
+
+.single-testi .testi-content p{
+    color: #fff;
+    font-size: 22px;
+    line-height: 1.5;
+    max-width: 500px;
+    margin-bottom: 30px;
+}
+
+.single-testi .test-name h4{
+    color: #fff;
+}
+
+.single-testi .test-name p{
+    color: #fff;
+    font-size: 17px;
+}
+
+.testi-slider .owl-nav button{
+    background-color: #005ead !important;
+    width: 55px;
+    height: 55px;
+    border: 1px solid #005ead !important;
+    transition: all .3s ease;
+    margin-right: 10px;
+    outline: none !important;
+}
+
+.testi-slider .owl-nav button span{
+    font-size: 55px;
+    font-weight: 200;
+    line-height: 40px;
+    color: #fff;
+}
+
+.testi-slider .owl-nav [class*=owl-]:hover{
+    background-color: #005ead !important;
+    border: 1px solid #005ead !important;
+}
+
+
+.testi-slider .owl-nav [class*=owl-]:hover span{
+    color: #fff;
+}
+
+.testi-slider .owl-nav{
+    position: absolute;
+    right: 10%;
+    bottom: -5%;
+}
+
+/* ******************************
+:: 15.0 Services Area CSS
+****************************** */
+.services-area{
+    padding: 70px 0 100px;
+    position: relative;
+    background-color: #f2f4ee;
+}
+
+.service-head h2{
+    position: relative;
+    color: #535353;
+    font-size: 35px;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+
+.service-box{
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 30px;
+    margin-bottom: 30px;
+    min-height: 315px;
+}
+
+.service-box .icon{
+    margin-bottom: 15px;
+}
+
+.service-box .inner h3{
+    color: #535353;
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.service-box .inner p{
+    color: #3f3f3f;
+    font-size: 15px;
+}
